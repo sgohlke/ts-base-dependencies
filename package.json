@@ -1,0 +1,38 @@
+{
+  "name": "@sgohlke/ts-base-dependencies",
+  "version": "1.0.0",
+  "description": "Collection of some dependencies for NodeJS typescript projects",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit --pretty",
+    "lint": "eslint src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgohlke/ts-base-dependencies.git"
+  },
+  "keywords": [
+    "typescript",
+    "devDependencies",
+    "collection"
+  ],
+  "author": "Stefan Gohlke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgohlke/ts-base-dependencies/issues"
+  },
+  "homepage": "https://github.com/sgohlke/ts-base-dependencies#readme",
+  "dependencies": {
+    "@types/jest": "29.4.0",
+    "@types/node": "18.11.18",
+    "@typescript-eslint/eslint-plugin": "5.49.0",
+    "@typescript-eslint/parser": "5.49.0",
+    "eslint": "8.32.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-modules-newline": "0.0.6",
+    "eslint-plugin-unicorn": "45.0.2",
+    "ts-jest": "29.0.5",
+    "typescript": "4.9.4"
+  }
+}
