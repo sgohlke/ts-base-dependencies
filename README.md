@@ -1,7 +1,7 @@
 # ts-base-dependencies
 Collection of dependencies for NodeJS Typescript projects
 
-Contains dependencies that can be used as **devDependencies** to work with a Typescript project containing Eslint for linting and Jest for testing.
+Contains dependencies that can be used as **devDependencies** to work with a Typescript project containing Eslint for linting and Jest for testing. For the list of included dependencies see [package.json](https://github.com/sgohlke/ts-base-dependencies/blob/main/package.json)
 
 # Setup NodeJS Typescript project
 
@@ -29,4 +29,4 @@ Scripts in package.json file:
 
 # Keep dependencies up-to-date
 
-You can update all dependencies included at once by updating to a new version of **@sgohlke/ts-base-dependencies**.
+You can update all dependencies included in this project/"library" at once by updating to a new version of **@sgohlke/ts-base-dependencies**.

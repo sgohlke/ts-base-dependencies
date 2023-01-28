@@ -68,7 +68,7 @@
             {
                 "case": "pascalCase",
                 "ignore": [
-                    "^FastifyGraphQL",
+                    "^GraphQL",
                     "\\.test\\.ts$"
                 ]
             }

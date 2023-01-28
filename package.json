@@ -1,7 +1,7 @@
 {
   "name": "@sgohlke/ts-base-dependencies",
   "version": "1.0.0",
-  "description": "Collection of some dependencies for NodeJS typescript projects",
+  "description": "Collection of dependencies for NodeJS Typescript projects",
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
