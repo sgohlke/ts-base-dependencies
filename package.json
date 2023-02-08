@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "check": "tsc --noEmit --pretty",
-    "lint": "eslint src/index.ts"
+    "lint": "eslint src/index.ts",
+    "test": "node --test"
   },
   "repository": {
     "type": "git",

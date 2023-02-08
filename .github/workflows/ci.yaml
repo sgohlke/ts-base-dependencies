@@ -16,4 +16,6 @@ jobs:
         run: npm run check
       - name: Check for linting issues
         run: npm run lint
+      - name: Run tests
+        run: npm run test  
 
