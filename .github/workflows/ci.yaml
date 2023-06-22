@@ -22,6 +22,7 @@ jobs:
     name: Automerge dependency updates
     needs: tsbasedependencies
     runs-on: ubuntu-latest
+    if: contains(github.ref, 'AAAtomerge')
     steps:
       - run: echo "Hello"
       - run: npm --version
