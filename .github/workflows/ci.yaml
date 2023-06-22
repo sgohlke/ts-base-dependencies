@@ -22,7 +22,7 @@ jobs:
     name: Automerge dependency updates
     needs: tsbasedependencies
     runs-on: ubuntu-latest
-    if: contains(github.ref, 'tomerge')
+    if: github.event_name == 'pull_request' && contains(github.ref, 'tomerge')
     steps:
       - run: echo "Hello"
       - run: npm --version
