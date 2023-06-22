@@ -18,4 +18,9 @@ jobs:
         run: npm run lint
       - name: Run tests
         run: npm run test  
-
+  automerge:
+    name: Automerge dependency updates
+    needs: tsbasedependencies
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello"
