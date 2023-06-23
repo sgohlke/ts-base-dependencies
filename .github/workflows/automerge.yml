@@ -8,7 +8,7 @@ permissions:
     pull-requests: write
 
 jobs:
-  tsbasedependencies:
+  automerge:
     name: Check
     runs-on: ubuntu-latest
     if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
@@ -24,15 +24,9 @@ jobs:
       - name: Check for linting issues
         run: npm run lint
       - name: Run tests
-        run: npm run test  
-  automerge:
-    name: Automerge dependency updates
-    needs: tsbasedependencies
-    runs-on: ubuntu-latest
-    if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
-    steps:
+        run: npm run test
       - name: Automerge PR
         run: gh pr merge --auto --merge "$PR_URL"
         env:
-            PR_URL: ${{github.event.pull_request.html_url}}
-            GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
