@@ -22,7 +22,8 @@ jobs:
     name: Automerge dependency updates
     needs: tsbasedependencies
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' && contains(github.ref, 'tomerge')
     steps:
+      - run: echo github.event_name
       - name: Automerge PR
+        if: github.event_name == 'pull_request' && contains(github.ref, 'tomerge')
         run: gh pr merge --auto --merge
