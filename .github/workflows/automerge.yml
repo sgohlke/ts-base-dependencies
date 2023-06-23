@@ -1,9 +1,12 @@
-name: Install and test ts-base-dependencies
-on: [push]
+name: Automerge dependabot PRs
+on:
+    pull_request:
+        types: opened
 
 jobs:
   tsbasedependencies:
     name: Check
+    if: contains(github.ref, 'tomerge')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,4 +20,12 @@ jobs:
       - name: Check for linting issues
         run: npm run lint
       - name: Run tests
-        run: npm run test
+        run: npm run test  
+  automerge:
+    name: Automerge dependency updates
+    if: contains(github.ref, 'tomerge')
+    needs: tsbasedependencies
+    runs-on: ubuntu-latest
+    steps:
+      - name: Automerge PR
+        run: gh pr merge --auto --merge
