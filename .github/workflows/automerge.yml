@@ -26,7 +26,8 @@ jobs:
     needs: tsbasedependencies
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ toJson(github) }}
+      - run: echo ${{ github.event.pull_request.user.login }}
       - name: Automerge PR
-        if: contains(github.ref, 'tomerge')
+        # ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
+        if: github.event.pull_request.user.login == 'sgohlke'
         run: gh pr merge --auto --merge
