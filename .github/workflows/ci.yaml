@@ -1,5 +1,7 @@
 name: Install and test ts-base-dependencies
-on: [push]
+on: 
+  push:
+    branches-ignore: "dependabot/**"
 
 jobs:
   tsbasedependencies:
