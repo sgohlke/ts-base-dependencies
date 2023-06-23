@@ -6,7 +6,6 @@ on:
 jobs:
   tsbasedependencies:
     name: Check
-    # if: contains(github.ref, 'tomerge')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -31,3 +30,5 @@ jobs:
         # ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
         if: github.event.pull_request.user.login == 'sgohlke'
         run: gh pr merge --auto --merge
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
