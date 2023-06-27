@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   automerge:
-    name: Check
+    name: Automerge
     runs-on: ubuntu-latest
     if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
     steps:
