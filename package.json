@@ -1,6 +1,6 @@
 {
   "name": "@sgohlke/ts-base-dependencies",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Collection of dependencies for NodeJS Typescript projects",
   "main": "src/index.ts",
   "type": "module",
@@ -32,7 +32,6 @@
     "eslint": "8.56.0",
     "eslint-plugin-deprecation": "2.0.0",
     "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-modules-newline": "0.0.6",
     "eslint-plugin-unicorn": "50.0.1",
     "ts-jest": "29.1.1",
     "typescript": "5.3.3"
