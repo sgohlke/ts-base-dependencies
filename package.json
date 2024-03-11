@@ -26,14 +26,14 @@
   "homepage": "https://github.com/sgohlke/ts-base-dependencies#readme",
   "dependencies": {
     "@types/jest": "29.5.12",
-    "@types/node": "20.11.24",
-    "@typescript-eslint/eslint-plugin": "7.1.0",
-    "@typescript-eslint/parser": "7.1.0",
+    "@types/node": "20.11.25",
+    "@typescript-eslint/eslint-plugin": "7.1.1",
+    "@typescript-eslint/parser": "7.1.1",
     "eslint": "8.57.0",
     "eslint-plugin-deprecation": "2.0.0",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-unicorn": "51.0.1",
     "ts-jest": "29.1.2",
-    "typescript": "5.3.3"
+    "typescript": "5.4.2"
   }
 }
