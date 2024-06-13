@@ -1,6 +1,9 @@
 # ts-base-dependencies
 Collection of dependencies for NodeJS Typescript projects
 
+**Deprecation notice**:
+This package will no longer be maintained. You can now use Dependabot group feature to group dependency updates so this approach is not necessary anymore.
+
 Contains dependencies that can be used as **devDependencies** to work with a Typescript project containing Eslint for linting and Jest for testing. For the list of included dependencies see [package.json](https://github.com/sgohlke/ts-base-dependencies/blob/main/package.json). The dependencies have fixed versions, they are updated by Dependabot automatic dependency updates.
 
 # Setup NodeJS Typescript project

@@ -1,13 +1,13 @@
 {
   "name": "@sgohlke/ts-base-dependencies",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Collection of dependencies for NodeJS Typescript projects",
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
     "check": "tsc --noEmit --pretty",
     "lint": "eslint src/index.ts",
-    "test": "node --test"
+    "test": "echo 'Not defined in this project'"
   },
   "repository": {
     "type": "git",
@@ -25,12 +25,10 @@
   },
   "homepage": "https://github.com/sgohlke/ts-base-dependencies#readme",
   "dependencies": {
-    "@types/jest": "29.5.12",
     "@types/node": "20.14.2",
     "eslint-plugin-deprecation": "3.0.0",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-unicorn": "53.0.0",
-    "ts-jest": "29.1.4",
     "typescript": "5.4.5",
     "typescript-eslint": "7.12.0"
   }
