@@ -22,6 +22,6 @@ jobs:
       - run: npm i
       - run: npm run check
       - run: npm run lint
-      - run: npm publish --provenance --access public
+      - run: npm deprecate @sgohlke/ts-base-dependencies "Use Dependabot group feature instead"
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
